@@ -1,32 +1,146 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
+
     <template id="snippet_testimonial" name="Testimonial snippet">
-      <section class="snippet_testimonial">
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-4">
-              <img alt="client" class="rounded-circle" src="/theme_tutorial/static/src/img/client_1.jpeg"/>
-              <h3>Client Name</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <section class="snippet_testimonial">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img alt="client" class="rounded-circle" src="/odoo_theme/static/src/img/client_1.jpeg"/>
+                        <h3>Client Name</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img alt="client" class="rounded-circle" src="/odoo_theme/static/src/img/client_2.jpeg"/>
+                        <h3>Client Name</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img alt="client" class="rounded-circle" src="/odoo_theme/static/src/img/client_3.jpeg"/>
+                        <h3>Client Name</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-4">
-              <img alt="client" class="rounded-circle" src="/theme_tutorial/static/src/img/client_2.jpeg"/>
-              <h3>Client Name</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="col-lg-4">
-              <img alt="client" class="rounded-circle" src="/theme_tutorial/static/src/img/client_3.jpeg"/>
-              <h3>Client Name</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
     </template>
+
+    <template id="snippet_banner" name="Homepage Banner">
+        <section>
+            <main class="sec-strt">
+                <div class="slider-wrapper sec-strt">
+                    <div class="container">
+                        <div id="demo" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ul class="carousel-indicators">
+                                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                <li data-target="#demo" data-slide-to="1"></li>
+                                <li data-target="#demo" data-slide-to="2"></li>
+                            </ul>
+                            <!-- The slideshow -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                            <div class="slider-caption-holder">
+                                                <h2>Massive sale on Ghee<br/>and Oil
+                                                </h2>
+                                                <p>and other itmes on sale</p>
+                                                <div class="slider-buttons-holder">
+                                                    <a href="#" class="fill-button">Order Now</a>
+                                                    <a href="#" class="empty-btn">Learn More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                            <img src="/odoo_theme/static/images/slider-img.png" alt=""
+                                                 class="img-fluid"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                            <div class="slider-caption-holder">
+                                                <h2>Massive sale on Ghee<br/>and Oil
+                                                </h2>
+                                                <p>and other itmes on sale</p>
+                                                <div class="slider-buttons-holder">
+                                                    <a href="#" class="fill-button">Order Now</a>
+                                                    <a href="#" class="empty-btn">Learn More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                            <img src="/odoo_theme/static/images/slider-img.png" alt=""
+                                                 class="img-fluid"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                            <div class="slider-caption-holder">
+                                                <h2>Massive sale on Ghee<br/>and Oil
+                                                </h2>
+                                                <p>and other itmes on sale</p>
+                                                <div class="slider-buttons-holder">
+                                                    <a href="#" class="fill-button">Order Now</a>
+                                                    <a href="#" class="empty-btn">Learn More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                            <img src="/odoo_theme/static/images/slider-img.png" alt=""
+                                                 class="img-fluid"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </section>
+    </template>
+
+    <template id="snippet_special_offers" name="Week’s Special Offer">
+        <section>
+            <div class="weekly-wrapper sec-strt">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                            <h3>Week’s Special Offer.</h3>
+                            <div class="img-holder">
+                                <img src="/odoo_theme/static/images/weekly-offer.jpg" alt="" class="img-fluid"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                            <h3>Adv.</h3>
+                            <div class="img-holder">
+                                <img src="/odoo_theme/static/images/adv1.jpg" alt="" class="img-fluid"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
     <template id="place_into_bar" inherit_id="website.snippets" name="Place into bar">
-      <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
-        <t t-snippet="theme_tutorial.snippet_testimonial"
-           t-thumbnail="/theme_tutorial/static/src/img/ui/snippet_thumb.jpeg"/>
-      </xpath>
+        <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
+            <t t-snippet="odoo_theme.snippet_testimonial"
+               t-thumbnail="/odoo_theme/static/src/img/ui/snippet_thumb.jpeg"/>
+            <t t-snippet="odoo_theme.snippet_banner"/>
+            <t t-snippet="odoo_theme.snippet_special_offers"/>
+        </xpath>
     </template>
+
 </odoo>

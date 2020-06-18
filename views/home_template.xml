@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="home_template" name="Home Page">
+        <t t-call="website.layout">
+            <div id="wrap" class="js_sale">
+                <div class="oe_structure" id="oe_structure_website_sale_products_1"/>
+                <div class="py-2 oe_website_sale">
+                    <div class="featured-wrapper sec-strt">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-0 col-0">
+                                    <div class="featured-categories-holder">
+                                        <div class="cross-holder">X</div>
+                                        <h3>Categories</h3>
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="active">All Categories</a>
+                                            </li>
+                                            <t t-foreach="categories" t-as="category">
+                                                <li>
+                                                    <a t-attf-href="/shop/category/#{slug(category)}">
+                                                        <t t-esc="category.name"/>
+                                                    </a>
+                                                </li>
+                                            </t>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12 col-12">
+                                    <div class="featured-triger">Featured Categories</div>
+                                    <div class="category-product">
+                                        <div class="row">
+                                            <t t-foreach="products" t-as="product">
+                                                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                                    <div class="product-container">
+                                                        <div class="img-holder">
+                                                            <a t-att-href="product.website_url">
+                                                                <!--                                                    <img src="/odoo_theme/static/src/images/prod1.jpg" alt=""/>-->
+                                                                <img t-att-src="'data:image/png;base64,%s' % to_text(product.image_1920)"
+                                                                     alt=""/>
+                                                            </a>
+                                                            <div class="price-holder">
+                                                                <p>RS
+                                                                    <br/>
+                                                                    <t t-esc="product.list_price"/>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-title-holder sec-strt">
+                                                            <div class="title-wrap">
+                                                                <t t-esc="product.name"/>
+                                                            </div>
+                                                            <div class="stock-info">In stock</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </t>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-stretch text-center mt32">
+                                        <t t-call="website.pager"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-items-wrapper sec-strt">
+                        <div class="container">
+                            <h3>New Items</h3>
+                            <t t-if="categ">
+                                <div class="row">
+                                    <t t-foreach="categ" t-as="c">
+                                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                            <div class="product-container">
+                                                <div class="img-holder">
+                                                    <a t-attf-href="/shop/product/#{ slug(c) }">
+                                                        <img t-att-src="'data:image/png;base64,%s' % to_text(c.image_1920)"
+                                                             alt=""/>
+                                                    </a>
+                                                    <div class="new-holder">
+                                                        <p>NEW!</p>
+                                                    </div>
+                                                </div>
+                                                <div class="product-title-holder sec-strt">
+                                                    <div class="title-wrap">
+                                                        <t t-esc="c.name"/>
+                                                    </div>
+                                                    <div class="stock-info">In stock</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </t>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+                <div class="oe_structure mb32" id="oe_structure_website_sale_products_2"/>
+            </div>
+        </t>
+    </template>
+</odoo>

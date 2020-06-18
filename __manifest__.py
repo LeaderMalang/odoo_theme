@@ -9,8 +9,10 @@
     'views/pages.xml',
     'views/assets.xml',
     'views/snippets.xml',
-    'views/options.xml'
+    'views/options.xml',
+    'views/home_template.xml',
+    'views/product_template.xml',
   ],
   'category': 'Theme/Creative',
-  'depends': ['website', 'website_theme_install'],
+  'depends': ['website', 'website_theme_install','website_sale', 'product'],
 }

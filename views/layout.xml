@@ -4,17 +4,27 @@
     <template id="custom_header" inherit_id="website.layout" name="Custom Header">
 
       <!-- Assign an id  -->
-      <xpath expr="//div[@id='wrapwrap']/header" position="attributes">
-        <attribute name="id">testing_attr_name</attribute>
-      </xpath>
+<!--      <xpath expr="//div[@id='wrapwrap']/header" position="attributes">-->
+<!--        <attribute name="id">testing_attr_name</attribute>-->
+<!--      </xpath>-->
+
+
 
       <!-- Add an element after the top menu  -->
-      <xpath expr="//div[@id='wrapwrap']/header/nav" position="after">
-        <div class="container">
-          <div class="alert alert-info mt16" role="alert">
-            <strong>Welcome</strong> in our website!
-          </div>
-        </div>
-      </xpath>
+<!--      <xpath expr="//div[@id='wrapwrap']/header/nav" position="after">-->
+<!--        <div class="container">-->
+<!--          <div class="alert alert-info mt16" role="alert">-->
+<!--            <strong>Welcome</strong> in our website!-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </xpath>-->
+<!--    </template>-->
+
+
+<!--      <template id="stan_top_header" inherit_id="portal.frontend_layout">-->
+<!--        <xpath expr="//header" position="replace">-->
+<!--            <p>Header Ahu AAvse</p>-->
+<!--        </xpath>-->
+<!--        </template>-->
     </template>
 </odoo>
