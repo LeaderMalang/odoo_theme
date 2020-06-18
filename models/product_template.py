@@ -5,4 +5,3 @@ class ProductTemplate(models.Model):
     _inherit = 'product.template'
 
     is_new_item = fields.Boolean('New Item')
-

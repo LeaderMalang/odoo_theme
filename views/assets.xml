@@ -5,6 +5,8 @@
             <link rel="stylesheet" type="text/scss" href="/odoo_theme/static/scss/style.scss"/>
             <link rel="stylesheet" type="text/scss" href="/odoo_theme/static/src/css/style.css"/>
             <link rel="stylesheet" type="text/scss" href="/odoo_theme/static/src/css/style.less"/>
+            <link rel="stylesheet" type="text/scss" href="/odoo_theme/static/src/css/owl.carousel.css"/>
+            <script type="text/javascript" src="/odoo_theme/static/src/js/owl.carousel.js"/>
         </xpath>
     </template>
 </odoo>
